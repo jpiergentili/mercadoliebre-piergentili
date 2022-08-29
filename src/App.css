@@ -68,7 +68,7 @@ body{
 
 .nav-search-button{
   width: auto;
-  height: 39px;
+  height: 20px;
   margin: 0;
   padding: 0 0 0 12px;
   cursor: pointer;
@@ -98,6 +98,7 @@ body{
 .nav-cuenta{
   padding-left: 30px;
 }
+
 .nav-cuenta li .nav-link{
   color: #333;
   text-decoration: none;
@@ -111,10 +112,58 @@ body{
 }
 
 main{
-  height: 4062px;
+  height: 1562px;
   background-color: #ebebeb;
+}
+
+#carouselExampleIndicators{
+  height: 340px;
+}
+
+.section-medios-pago{
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.img-medios-pago{
+  display: block;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-ofertas{
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.img-ofertas-quick{
+  display: block;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3px;
+}
+
+.section-nivelseis{
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+
+.img-nivelseis{
+  display: block;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer{
   height: 425px;
+}
+
+.footer-rapido{
+  max-width: 1600px;
 }
