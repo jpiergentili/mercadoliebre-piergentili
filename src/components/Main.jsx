@@ -23,22 +23,22 @@ const Main = () =>{
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
+                    <div className="carousel-item active" data-bs-interval="2000">
                         <img src={banner1} className="d-block w-100" alt="banner1" />
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="2000">
                         <img src={banner2} className="d-block w-100" alt="banner2" />
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="2000">
                         <img src={banner3} className="d-block w-100" alt="banner3" />
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="2000">
                         <img src={banner4} className="d-block w-100" alt="banner3" />
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="2000">
                         <img src={banner5} className="d-block w-100" alt="banner3" />
                     </div>
-                    <div className="carousel-item">
+                    <div className="carousel-item" data-bs-interval="2000">
                         <img src={banner6} className="d-block w-100" alt="banner3" />
                     </div>
                 </div>
