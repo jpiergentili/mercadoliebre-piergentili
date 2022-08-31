@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./images/LOGO-JP.png";
-import NavBar from "./NavBar";
+import NavBar from "./ChildsHeader/NavBar";
 import ImageLvl6 from "./images/Image-promo-lvl6.png"
-import NavCuenta from "./NavCuenta";
+import NavCuenta from "./ChildsHeader/NavCuenta";
 import ImageUbic from "./images/button-geo.png"
 
 
