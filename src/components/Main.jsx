@@ -6,9 +6,9 @@ import banner4 from "./images/banner4.png";
 import banner5 from "./images/banner5.png";
 import banner6 from "./images/banner6.png";
 import mediospagoQuick from "./images/medios-pago.png";
-import ofertasQuick from "./images/section-ofertas.png";
-import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 
+import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
+import ItemsListOfertas from "./ChildsMain/ItemListContainer";
 
 const Main = () =>{
     return (
@@ -56,8 +56,13 @@ const Main = () =>{
                     <img src={mediospagoQuick} className="img-medios-pago" alt="medios-pago" />
             </section>
 
-            <section className="conteiner-fluid section-ofertas">
-                    <img src={ofertasQuick} className="img-ofertas-quick" alt="ofertas-quick" />
+
+            {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
+            <section className="row section-ofertas">
+                <div>
+                    <ItemsListOfertas />
+                </div>
+
             </section>
 
             <section className="conteiner-fluid section-nivelseis">

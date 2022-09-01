@@ -225,7 +225,7 @@ main{
 }
 
 .section-ofertas{
-  display: flex;
+  display: inline;
   align-items: center;
   margin-top: 17px;
 }
