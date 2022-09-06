@@ -70,7 +70,7 @@ const Main = () =>{
             {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
             <section className="row section-ofertas">
                 <div>
-                    <ItemListContainer />
+                    <ItemListContainer greeting={"Productos en descuento"} ofertas={['televisor', 'colchon', 'bicicleta', 'auriculares', 'filtro']} />
                 </div>
             </section>
 
