@@ -7,8 +7,11 @@ import banner5 from "./images/banner5.png";
 import banner6 from "./images/banner6.png";
 import mediospagoQuick from "./images/medios-pago.png";
 
+
+
 import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
-import ItemsListOfertas from "./ChildsMain/ItemListContainer";
+import ItemCount from "./ItemCount";
+import ItemListContainer from "./ItemListContainer";
 
 const Main = () =>{
     return (
@@ -56,15 +59,22 @@ const Main = () =>{
                     <img src={mediospagoQuick} className="img-medios-pago" alt="medios-pago" />
             </section>
 
+            {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
+            <section className="row">
+                <div>
+                <ItemCount stock={8} initial={1} onAdd={0} />
+                </div>
+            </section>
+
 
             {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
             <section className="row section-ofertas">
                 <div>
-                    <ItemsListOfertas />
+                    <ItemListContainer />
                 </div>
-
             </section>
 
+            {/* SECCION EN CONSTRUCCION SOLO PARA RELLENO DE LA PAGINA */}
             <section className="conteiner-fluid section-nivelseis">
                     <img src={nivelSeisQuick} className="img-nivelseis" alt="suscrip-nivelseis" />
             </section>

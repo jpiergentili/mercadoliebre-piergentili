@@ -1,11 +1,10 @@
 import React from "react";
 import logo from "./images/LOGO-JP.png";
-import NavBar from "./ChildsHeader/NavBar";
+import NavBar from "./NavBar";
 import ImageLvl6 from "./images/Image-promo-lvl6.png"
-import NavCuenta from "./ChildsHeader/NavCuenta";
+import NavCuenta from "./NavCuenta";
 import ImageUbic from "./images/button-geo.png"
-import Carrito from "./ChildsHeader/CartWidget";
-
+import Carrito from "./CartWidget";
 
 
 const Header = () => {
@@ -39,7 +38,8 @@ const Header = () => {
 
                 <div className="header-container-carrito">
                    <Carrito cantidad="3"/>
-                </div>                   
+                </div>
+                
             </div>
         </div>
 

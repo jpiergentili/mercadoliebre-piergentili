@@ -1,5 +1,6 @@
 import React from "react";
 import footer from "./images/footer.png"
+
 const Footer = () =>{
     return (
         <footer className="container-fluid">
@@ -9,7 +10,6 @@ const Footer = () =>{
                        
         </footer>
     )
-
 }
 
 export default Footer;

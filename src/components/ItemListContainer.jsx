@@ -1,6 +1,6 @@
 import React from "react";
 
-class ItemsListOfertas extends React.Component{
+class ItemListContainer extends React.Component{
     constructor (props){
         super(props);
         this.state = {
@@ -17,4 +17,4 @@ class ItemsListOfertas extends React.Component{
     }
 }
 
-export default ItemsListOfertas;
+export default ItemListContainer;
