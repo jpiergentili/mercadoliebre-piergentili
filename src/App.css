@@ -224,16 +224,17 @@ main{
   margin-right: auto;
 }
 
-.section-ofertas{
-  display: inline;
-  align-items: center;
-  margin-top: 17px;
-}
 
 .centrar-objetos{
-  display: flex;
+  display: inline-flex;
+  justify-content: space-evenly;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-ofertas{
+  width: 15rem;
+  min-height: 280px;
 }
 
 .img-ofertas-quick{

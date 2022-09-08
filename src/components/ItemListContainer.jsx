@@ -27,7 +27,7 @@ const ItemListContainer = (props) =>{
     }, []);
 
     return (
-        <div className="container centrar-objetos">
+        <div className="row">
             <ItemList items={items}/>
         </div>
     )

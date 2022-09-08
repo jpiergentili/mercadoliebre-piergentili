@@ -56,16 +56,14 @@ const Main = () =>{
             </div>
 
             {/* DIV PARA ENTREGABLE N°5 - CREACION DE LISTA EN EL MAIN */}
-            <section className="row ">
-                <div>
-                    <ItemListContainer />
-                </div>
+            <section className="conteiner">                
+                    <ItemListContainer />                
             </section>
 
             {/* DIV PARA ENTREGABLE N°4 - CREACION DE LISTA EN EL MAIN */}
             <section className="row">
                 <div>
-                <ItemCount stock={8} initial={1} onAdd={0} />
+                    <ItemCount stock={8} initial={1} onAdd={0} />
                 </div>
             </section>
 
