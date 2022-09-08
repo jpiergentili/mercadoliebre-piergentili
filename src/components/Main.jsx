@@ -55,23 +55,23 @@ const Main = () =>{
                 </button>
             </div>
 
-            <section className="conteiner-fluid section-medios-pago">
-                    <img src={mediospagoQuick} className="img-medios-pago" alt="medios-pago" />
+            {/* DIV PARA ENTREGABLE N°5 - CREACION DE LISTA EN EL MAIN */}
+            <section className="row ">
+                <div>
+                    <ItemListContainer />
+                </div>
             </section>
 
-            {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
+            {/* DIV PARA ENTREGABLE N°4 - CREACION DE LISTA EN EL MAIN */}
             <section className="row">
                 <div>
                 <ItemCount stock={8} initial={1} onAdd={0} />
                 </div>
             </section>
 
-
-            {/* DIV PARA ENTREGABLE N°3 - CREACION DE LISTA EN EL MAIN */}
-            <section className="row section-ofertas">
-                <div>
-                    <ItemListContainer greeting={"Productos en descuento"} ofertas={['televisor', 'colchon', 'bicicleta', 'auriculares', 'filtro']} />
-                </div>
+            {/* SECCION EN CONSTRUCCION SOLO PARA RELLENO DE LA PAGINA */}
+            <section className="conteiner-fluid section-medios-pago">
+                    <img src={mediospagoQuick} className="img-medios-pago" alt="medios-pago" />
             </section>
 
             {/* SECCION EN CONSTRUCCION SOLO PARA RELLENO DE LA PAGINA */}

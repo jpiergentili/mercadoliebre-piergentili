@@ -35,12 +35,12 @@ const ItemCount = ({stock, initial, onAdd}) =>{
                     <div className="input-group">
                         <input type="button" className="btn btn-secundary" value="-" onClick={() =>
                             {decrementarCantidad(cantidad - 1)}} />                    
-                        <input type="text" className="form-control" value={cantidad} />
+                        <input type="text" className="form-control" value={cantidad} onChange={() =>{}}/>
                         <input type="button" className="btn btn-secundary" value="+" onClick={() =>
                             {incrementarCantidad(cantidad + 1)}} />
                     </div>
                     <div className="d-grid gap-2 pt-3">
-                        <input type="button" className="btn btn-secundary" value="agregar" onClick={() =>
+                        <input type="button" className="btn btn-primary" value="Agregar" onClick={() =>
                             {agregarProductos()}} />
                     </div>
                     <p>Productos seleccionados: {itemAdd}</p>

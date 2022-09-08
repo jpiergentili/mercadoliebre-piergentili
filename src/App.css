@@ -230,6 +230,12 @@ main{
   margin-top: 17px;
 }
 
+.centrar-objetos{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img-ofertas-quick{
   display: block;
   max-width: 1200px;
