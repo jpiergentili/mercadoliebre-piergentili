@@ -1,0 +1,7 @@
+export const listaOfertas = [
+    {'id':1, 'tittle':'Televisor', 'description':'Televisor CoderSmart 32"','price':38.799, 'pictureUrl':'https://drive.google.com/uc?id=1LQ5EZa-aRUllnnw7Q86AuIN5YinmpDKZ','detail':'Android TV CODERSMART: ofrece una experiencia de uso mas amigable y con una interfaz grafica intuitiva. Cuenta con Netflix FHD, Disney+, Amazon Prime, Youtube FHD, Chromecast integrado y acceso al Play Store. Procesador MT9216 1,5 GHz quad core, con soporte para HDMI v2.0 ARC. Resolución FULL HD(1080P). Cosmética con terminacion frameless (E3A). Entradas HDMI 2.0 con soporte ARC. Puertos USB disponibles. Modo futbol con refuerzo de sonido y adaptacion de imagen para una mejor visualizacion. Sonido mejorado Dolby Audio.Comando de voz por Google y servicios de Google Play.'},
+    {'id':2, 'tittle':'Colchon', 'description':'Conchon CoderSleep','price':33.027, 'pictureUrl':'https://drive.google.com/uc?id=1slTy0LQ7EPJXyY-zcIv78kNdocgvNQLO'},
+    {'id':3, 'tittle':'Bicicleta', 'description':'Bicicleta RallyReact','price':45.649, 'pictureUrl':'https://drive.google.com/uc?id=1kwH5x5e02cKXXR4_4UrsHmfY8uPOusnS'},
+    {'id':4, 'tittle':'Auriculares', 'description':'Auriculares DeepCoding','price':13.999, 'pictureUrl':'https://drive.google.com/uc?id=1ZOXFdTiKoESIHv0NGZeYR2_b877LwNWP'},
+    {'id':5, 'tittle':'Filtro', 'description':'Filtro p/pileta FrontEndDev','price':11.499, 'pictureUrl':'https://drive.google.com/uc?id=1jSIEEsFOxWoVUq9hIDkStYkWHg29raAa'}
+];

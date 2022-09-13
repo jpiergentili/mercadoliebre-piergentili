@@ -1,26 +1,28 @@
 import React from "react";
 import { listaOfertas } from "../mock/listaOfertas";
-import ItemList from "./ItemList";
+import ItemDetail from "./ItemDetail";
 
-const ItemListContainer = (props) =>{
+const ItemDetailContainer = () =>{
+    const [item, setItem] = React.useState({});
 
-    const [items, setItems] = React.useState([]);
-    React.useEffect(() => {       
+    React.useEffect(() => {
 
-        const getProducts = new Promise((resolve, reject) =>{
+        const getProduct = new Promise((resolve, reject) =>{
+
+            const oferta = listaOfertas.find((o)=> o.id === 1);
             setTimeout(() =>{               //simulo una demora por parte del servidor de 2seg
-                resolve(listaOfertas);      //si la promesa se resuelve correctamete devuelve la lista de ofertas
+                resolve(oferta);      //si la promesa se resuelve correctamete devuelve la lista de ofertas
             }, 2000);
         });
 
          /* cuando la promesa es resuelta correctamente con setItems 
          se actualiza el estado de Items con los valores de la respuesta, por lo tanto items=listaOfertas */
-        getProducts.then((respuesta) =>{   
-            setItems(respuesta);
+        getProduct.then((detalles) =>{   
+            setItem(detalles);
         });
 
         /* en caso de que la peticion al servidor salga fallida se ejecutara el metodo catch */
-        getProducts.catch((error) =>{   
+        getProduct.catch((error) =>{   
             console.log(error);
         });
 
@@ -31,9 +33,9 @@ poniendo los corchetes se ejecuta 1 sola vez al inicio */
 
     return (
         <div className="row">
-            <ItemList items={items}/>
+            <ItemDetail item={item} />
         </div>
     )
 }
 
-export default ItemListContainer;
+export default ItemDetailContainer;

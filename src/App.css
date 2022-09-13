@@ -245,6 +245,16 @@ main{
   padding-left: 3px;
 }
 
+.card-detalles{
+  display: flex;
+  width: 1200px;
+  min-height: 400px;
+}
+
+.card-img-detalles{
+  width: 15rem;  
+}
+
 .section-nivelseis{
   display: flex;
   align-items: center;

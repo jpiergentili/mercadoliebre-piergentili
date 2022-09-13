@@ -5,12 +5,17 @@ class ItemsNav extends React.Component{
     constructor (props){
         super(props);
         this.state = {
-            masCategorias: ['Ofertas', 'Historial', 'Supermercado', 'Moda', 'Vender', 'Ayuda']
+            masCategorias: [{id:1, Cat:'Ofertas'},
+                            {id:2, cat:'Historial'},
+                            {id:3, cat:'Supermercado'},
+                            {id:4, cat:'Moda'},
+                            {id:5, cat:'Vender'},
+                            {id:6, cat:'Ayuda'}]
         };
     }
         render() {
             const masItemsCategorias = this.state.masCategorias.map(c =>(
-                <li><a href=" ">{ c }</a></li>
+                <li><a href=" " key={c.id}>{ c.cat }</a></li>
             ));
             return (
                 masItemsCategorias
@@ -23,12 +28,33 @@ class ItemsCategorias extends React.Component{
     constructor (props){
         super(props);
         this.state = {
-            categorias: ['Vehículos', 'Inmuebles', 'Supermercado', 'Tecnología', 'Hogar y Muebles', 'Electrodomésticos', 'Herramientas', 'Construcción', 'Deportes y Fitness', 'Accesorios para Vehículos', 'Moda', 'Juegos y Juguetes', 'Bebés', 'Belleza y Cuidado Personal', 'Salud y Equipamiento Médico', 'Industrias y Oficinas', 'Agro', 'Productos Sustentables', 'Servicios', 'Más vendidos', 'Tiendas oficiales', 'Ver más categorías']
+            categorias: [{id:1, cat:'Vehículos'},
+                        {id:2, cat:'Inmuebles'},
+                        {id:3, cat:'Supermercado'},
+                        {id:4, cat:'Tecnología'},
+                        {id:5, cat:'Hogar y Muebles'},
+                        {id:6, cat: 'Electrodomésticos'},
+                        {id:7, cat:'Herramientas'},
+                        {id:8, cat:'Construcción'},
+                        {id:9, cat:'Deportes y Fitness'},
+                        {id:10, cat:'Accesorios para Vehículos'},
+                        {id:11, cat:'Moda'},
+                        {id:12, cat:'Juegos y Juguetes'},
+                        {id:13, cat:'Bebés'},
+                        {id:14, cat:'Belleza y Cuidado Personal'},
+                        {id:15, cat:'Salud y Equipamiento Médico'},
+                        {id:16, cat:'Industrias y Oficinas'},
+                        {id:17, cat:'Agro'},
+                        {id:18, cat:'Productos Sustentables'},
+                        {id:19, cat:'Servicios'},
+                        {id:20, cat:'Más vendidos'},
+                        {id:21, cat:'Tiendas oficiales'},
+                        {id:22, cat:'Ver más categorías'}]
         };
     }
         render() {
-            const categorias = this.state.categorias.map(c =>(
-                <li  className="dropdown-item"><a href=" ">{ c }</a></li>
+            const categorias = this.state.categorias.map(n =>(
+                <li  className="dropdown-item"><a href=" " key={n.id}>{ n.cat }</a></li>
             ));
             return (
                 <ul className="dropdown-menu" aria-labelledby="dLabel">{ categorias }</ul>

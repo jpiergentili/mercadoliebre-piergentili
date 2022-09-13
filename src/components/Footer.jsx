@@ -6,8 +6,8 @@ const Footer = () =>{
         <footer className="container-fluid">
             <div className="row">
                 <img src={footer} className="image-fluid footer-rapido" alt="footerRapido" />
-            </div>
-                       
+                <p>ESTA PAGINA ES UNA CREACION PARA USO NETAMENTE ACADEMICO</p>
+            </div>                       
         </footer>
     )
 }

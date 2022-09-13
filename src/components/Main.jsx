@@ -11,11 +11,13 @@ import mediospagoQuick from "./images/medios-pago.png";
 
 import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 import ItemCount from "./ItemCount";
+import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 
 const Main = () =>{
     return (
         <main>
+            {/* CARRUSEL */}
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -56,8 +58,12 @@ const Main = () =>{
             </div>
 
             {/* DIV PARA ENTREGABLE N°5 - CREACION DE LISTA EN EL MAIN */}
-            <section className="conteiner">                
+            <section className="container">                
                     <ItemListContainer />                
+            </section>
+
+            <section className="container">
+                    <ItemDetailContainer />
             </section>
 
             {/* DIV PARA ENTREGABLE N°4 - CREACION DE LISTA EN EL MAIN */}
