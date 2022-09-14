@@ -7,10 +7,8 @@ import banner5 from "./images/banner5.png";
 import banner6 from "./images/banner6.png";
 import mediospagoQuick from "./images/medios-pago.png";
 
-
-
 import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
-import ItemCount from "./ItemCount";
+
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 
@@ -64,13 +62,6 @@ const Main = () =>{
 
             <section className="container">
                     <ItemDetailContainer />
-            </section>
-
-            {/* DIV PARA ENTREGABLE N°4 - CREACION DE LISTA EN EL MAIN */}
-            <section className="row">
-                <div>
-                    <ItemCount stock={8} initial={1} onAdd={0} />
-                </div>
             </section>
 
             {/* SECCION EN CONSTRUCCION SOLO PARA RELLENO DE LA PAGINA */}

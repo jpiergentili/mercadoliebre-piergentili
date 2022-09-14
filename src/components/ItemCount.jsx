@@ -1,5 +1,4 @@
 import React from "react";
-import ofertaTV from "./images/Oferta-TV.png";
 
 const ItemCount = ({stock, initial, onAdd}) =>{
 
@@ -29,7 +28,6 @@ const ItemCount = ({stock, initial, onAdd}) =>{
     return (
         <div className="container py-5 img-medios-pago">
             <div className="card col-md-2">
-                <img src={ofertaTV} className="card-img-top" alt="..." />
                 <div className="card-body">
                 <p className="text-center">TV CoderSmart</p>
                     <div className="input-group">

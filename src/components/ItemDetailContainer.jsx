@@ -1,5 +1,6 @@
 import React from "react";
 import { listaOfertas } from "../mock/listaOfertas";
+
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () =>{
