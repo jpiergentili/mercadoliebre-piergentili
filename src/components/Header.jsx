@@ -13,7 +13,7 @@ const Header = () => {
             <div className="container header-sec">
 
                 <div className="container header-container-logo">
-                    <a className="row" href="..."><img id="logo-ppal"src={logo} alt="mercadoliebre" /></a>
+                    <a className="row" href="/"><img id="logo-ppal"src={logo} alt="mercadoliebre" /></a>
                 </div>
 
                 <div className="header-container-browser">

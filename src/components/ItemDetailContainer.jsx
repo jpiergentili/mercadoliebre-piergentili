@@ -2,6 +2,7 @@ import React from "react";
 import { listaOfertas } from "../mock/listaOfertas";
 
 import ItemDetail from "./ItemDetail";
+import {useParams} from "react-router-dom";
 
 const ItemDetailContainer = () =>{
     const [item, setItem] = React.useState({});
@@ -9,6 +10,8 @@ const ItemDetailContainer = () =>{
     React.useEffect(() => {
 
         const getProduct = new Promise((resolve, reject) =>{
+
+
 
             const oferta = listaOfertas.find((o)=> o.id === 1);
             setTimeout(() =>{               //simulo una demora por parte del servidor de 2seg

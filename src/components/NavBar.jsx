@@ -5,17 +5,17 @@ class ItemsNav extends React.Component{
     constructor (props){
         super(props);
         this.state = {
-            masCategorias: [{id:1, Cat:'Ofertas'},
-                            {id:2, cat:'Historial'},
-                            {id:3, cat:'Supermercado'},
-                            {id:4, cat:'Moda'},
-                            {id:5, cat:'Vender'},
-                            {id:6, cat:'Ayuda'}]
+            masCategorias: [{id:1, href:"/ofertas/1", cat:'Ofertas'},
+                            {id:2, href:" ", cat:'Historial'},
+                            {id:3, href:" ", cat:'Supermercado'},
+                            {id:4, href:" ", cat:'Moda'},
+                            {id:5, href:" ", cat:'Vender'},
+                            {id:6, href:" ", cat:'Ayuda'}]
         };
     }
         render() {
             const masItemsCategorias = this.state.masCategorias.map(c =>(
-                <li><a href=" " key={c.id}>{ c.cat }</a></li>
+                <li><a href={c.href} key={c.id}>{ c.cat }</a></li>
             ));
             return (
                 masItemsCategorias
@@ -29,7 +29,7 @@ class ItemsCategorias extends React.Component{
         super(props);
         this.state = {
             categorias: [{id:1, cat:'Vehículos'},
-                        {id:2, cat:'Inmuebles'},
+                        {id:2,cat:'Inmuebles'},
                         {id:3, cat:'Supermercado'},
                         {id:4, cat:'Tecnología'},
                         {id:5, cat:'Hogar y Muebles'},
