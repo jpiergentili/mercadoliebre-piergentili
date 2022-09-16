@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 /* items del navbar principales */
 class ItemsNav extends React.Component{
@@ -15,7 +16,7 @@ class ItemsNav extends React.Component{
     }
         render() {
             const masItemsCategorias = this.state.masCategorias.map(c =>(
-                <li><a href={c.href} key={c.id}>{ c.cat }</a></li>
+                <li><Link to={c.href} key={c.id}>{ c.cat }</Link></li>
             ));
             return (
                 masItemsCategorias

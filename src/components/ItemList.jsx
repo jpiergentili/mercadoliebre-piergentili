@@ -7,7 +7,7 @@ const ItemList = ({items}) =>{
         <div className="centrar-objetos">
             {items.map(item => (
                 <div key={item.id} >
-                    <Item id={item.id} tittle={item.tittle} description={item.description} price={item.price} pictureUrl={item.pictureUrl} />
+                    <Item id={item.id+"-"+item.tittle} tittle={item.tittle} description={item.description} price={item.price} pictureUrl={item.pictureUrl}/>
                 </div>)
             )}
         </div>

@@ -1,17 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const NavCuenta = () => {
     return (
         <div className="row header-container-nav-cuenta">
             <ul className="navbar header-ul-nav-cuenta">
                 <li>
-                    <a className="header-nav-link"  href="/signup">Creá tu cuenta</a>
+                    <Link className="header-nav-link"  to="/signup">Creá tu cuenta</Link>
                 </li>
                 <li>
-                    <a className="header-nav-link" href="/login">Ingresá</a>
+                    <Link className="header-nav-link" to="/login">Ingresá</Link>
                 </li>
                 <li>
-                    <a className="header-nav-link" href="/myshopping">Mis compras</a>
+                    <Link className="header-nav-link" to="/myshopping">Mis compras</Link>
                 </li>
             </ul>
         </div>
