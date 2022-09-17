@@ -3,7 +3,6 @@ import React from "react";
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 
-
 const Ofertas = () =>{
     return (
         <>            
@@ -12,8 +11,8 @@ const Ofertas = () =>{
                     <ItemListContainer />                
             </div>
 
-            <div className="container">
-                    <ItemDetailContainer />                        
+            <div className="container">          
+                   <ItemDetailContainer />   
             </div>
         </>
     )

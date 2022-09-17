@@ -1,22 +1,27 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+
 /* items del navbar principales */
 class ItemsNav extends React.Component{
     constructor (props){
         super(props);
         this.state = {
-            masCategorias: [{id:1, href:"/ofertas/1", cat:'Ofertas'},
-                            {id:2, href:" ", cat:'Historial'},
-                            {id:3, href:" ", cat:'Supermercado'},
-                            {id:4, href:" ", cat:'Moda'},
-                            {id:5, href:" ", cat:'Vender'},
-                            {id:6, href:" ", cat:'Ayuda'}]
+
+            masCategorias: [{id:1, cat:'Ofertas'},
+                            {id:2, cat:'Historial'},
+                            {id:3, cat:'Supermercado'},
+                            {id:4, cat:'Moda'},
+                            {id:5, cat:'Vender'},
+                            {id:6, cat:'Ayuda'}]
         };
     }
         render() {
+            const nroRandom = parseInt(Math.floor(Math.random()*6)+1);
+            console.log(nroRandom);
+
             const masItemsCategorias = this.state.masCategorias.map(c =>(
-                <li><Link to={c.href} key={c.id}>{ c.cat }</Link></li>
+                <li key={c.id}><Link to={`/ofertas/${nroRandom}`} >{ c.cat }</Link></li>
             ));
             return (
                 masItemsCategorias
@@ -55,7 +60,7 @@ class ItemsCategorias extends React.Component{
     }
         render() {
             const categorias = this.state.categorias.map(n =>(
-                <li  className="dropdown-item"><a href=" " key={n.id}>{ n.cat }</a></li>
+                <li  className="dropdown-item" key={n.id}><a href=" " >{ n.cat }</a></li>
             ));
             return (
                 <ul className="dropdown-menu" aria-labelledby="dLabel">{ categorias }</ul>

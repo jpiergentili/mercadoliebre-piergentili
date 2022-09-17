@@ -11,13 +11,13 @@ import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 import mediospagoQuick from "./images/medios-pago.png";
 
 const Main = () =>{
+
     return (
             <main>
                 <section>
                     <Routes>
                         <Route exact path="/" element={<Inicio />} />
-                        <Route exact path="/ofertas/1" element={<Ofertas />} />
-                        <Route exact path="/ofertas/:id" element={<Ofertas />} />                        
+                        <Route path='/ofertas/:id' element={<Ofertas />} />                        
                         <Route exact path="/login" element={<Login />} />
                         <Route exact path="/signup" element={<SignUp />} />
                         <Route exact path="/myshopping" element={<MyShopping />} />
