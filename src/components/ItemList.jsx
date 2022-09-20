@@ -7,7 +7,7 @@ const ItemList = ({items}) =>{
     return(
         <div className="centrar-objetos" >
             {items.map(item => (
-                <Link key={item.id} to={"/ofertas/"+item.id} >
+                <Link key={item.id} to={"/item/"+item.id} >
                     <Item  tittle={item.tittle} description={item.description} price={item.price} pictureUrl={item.pictureUrl} />
                 </Link>)
             )}

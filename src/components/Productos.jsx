@@ -3,7 +3,7 @@ import React from "react";
 import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 
-const Ofertas = () =>{
+const Productos = () =>{
     return (
         <>            
             {/* DIV PARA ENTREGABLE N°5 - CREACION DE LISTA EN EL MAIN */}
@@ -18,4 +18,4 @@ const Ofertas = () =>{
     )
 }
 
-export default Ofertas;
+export default Productos;

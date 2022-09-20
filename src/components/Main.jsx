@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from 'react-router-dom';
 import Inicio from "./Inicio";
-import Ofertas from "./Ofertas";
 
 import Login from "./NavCuenta/Login";
 import MyShopping from "./NavCuenta/MyShopping";
@@ -9,6 +8,8 @@ import SignUp from "./NavCuenta/SignUp";
 
 import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 import mediospagoQuick from "./images/medios-pago.png";
+import Productos from "./Productos";
+
 
 const Main = () =>{
 
@@ -17,7 +18,8 @@ const Main = () =>{
                 <section>
                     <Routes>
                         <Route exact path="/" element={<Inicio />} />
-                        <Route path='/ofertas/:id' element={<Ofertas />} />                        
+                        <Route path='/item/:id' element={<Productos />} />                        
+                        <Route path='/category/:categoryId' element={<Productos />} />     
                         <Route exact path="/login" element={<Login />} />
                         <Route exact path="/signup" element={<SignUp />} />
                         <Route exact path="/myshopping" element={<MyShopping />} />
