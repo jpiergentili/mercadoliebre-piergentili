@@ -8,10 +8,17 @@ export const getItemId = (id) => {
     })
 }
 
-export const getItemsCategory = (cat) => {
+export const getItemsList= (cat) => {
     return new Promise(resolve => {
-        setTimeout(() => {                                              
-            resolve(listaProductos.filter(listaProductos => listaProductos.cat === cat)) 
-        }, 2000);
-    })
-}
+        if(cat !== ""){
+            setTimeout(() => {                                              
+                resolve(listaProductos.filter(listaProductos => listaProductos.cat === cat)) 
+            }, 2000);
+        }
+        else{
+            setTimeout(()=>{
+                resolve(listaProductos);        
+            });
+        }
+    }
+)}

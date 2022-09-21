@@ -3,8 +3,6 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({item}) => {
 
-    console.log(typeof item.stock)
-    
     return(
         <div className="col-md-8 py-3">
             <div className="card card-detalles" >

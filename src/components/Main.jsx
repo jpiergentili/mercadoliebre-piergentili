@@ -8,7 +8,7 @@ import SignUp from "./NavCuenta/SignUp";
 
 import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 import mediospagoQuick from "./images/medios-pago.png";
-import Productos from "./Productos";
+import Detalles from "./Detalles";
 
 
 const Main = () =>{
@@ -18,8 +18,9 @@ const Main = () =>{
                 <section>
                     <Routes>
                         <Route exact path="/" element={<Inicio />} />
-                        <Route path='/item/:id' element={<Productos />} />                        
-                        <Route path='/category/:categoryId' element={<Productos />} />     
+                        <Route path='/category/:categoryId' element={<Inicio />} />     
+                        <Route path='/item/:id' element={<Detalles />} />
+                        
                         <Route exact path="/login" element={<Login />} />
                         <Route exact path="/signup" element={<SignUp />} />
                         <Route exact path="/myshopping" element={<MyShopping />} />

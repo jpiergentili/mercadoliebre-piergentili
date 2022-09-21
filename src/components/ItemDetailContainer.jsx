@@ -15,7 +15,7 @@ const ItemDetailContainer = () =>{
 
          /* cuando la promesa es resuelta correctamente con setItems 
          se actualiza el estado de Items con los valores de la respuesta, por lo tanto items=listaOfertas */
-         getItemId(id).then((detalles) =>{   
+         getItemId(id).then((detalles) =>{
             setItem(detalles);
         });
 
@@ -24,10 +24,10 @@ const ItemDetailContainer = () =>{
             console.log(error);
         });
 
-/* los corchetes de la linea siguiente se utilizan a modo de filtro, 
-para evitar que la actualizacion de los estados se ejecute todo el tiempo,
-poniendo los corchetes se ejecuta 1 sola vez al inicio */
-    }, [id]); 
+        /* los corchetes de la linea siguiente se utilizan a modo de filtro, 
+        para evitar que la actualizacion de los estados se ejecute todo el tiempo,
+        poniendo los corchetes se ejecuta 1 sola vez al inicio */
+        }, [id]); 
 
     return (
         <div className="row">
