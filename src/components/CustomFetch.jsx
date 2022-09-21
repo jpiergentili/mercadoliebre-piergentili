@@ -10,7 +10,7 @@ export const getItemId = (id) => {
 
 export const getItemsList= (parametro) => {
     return new Promise(resolve => {
-        if(parametro !== null){
+        if(parametro !== undefined){
             setTimeout(() => {                                              
                 resolve(listaProductos.filter(listaProductos => listaProductos.cat === parametro)) 
             }, 2000);
