@@ -20,7 +20,7 @@ const ItemListContainer = () =>{
         getItemsList(categoryId).catch((error) =>{   
             console.log(error);
         });
-    }
+    
 
 
 /* los corchetes de la linea siguiente se utilizan a modo de filtro, 

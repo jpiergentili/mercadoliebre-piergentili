@@ -8,11 +8,11 @@ export const getItemId = (id) => {
     })
 }
 
-export const getItemsList= (cat) => {
+export const getItemsList= (parametro) => {
     return new Promise(resolve => {
-        if(cat !== ""){
+        if(parametro !== null){
             setTimeout(() => {                                              
-                resolve(listaProductos.filter(listaProductos => listaProductos.cat === cat)) 
+                resolve(listaProductos.filter(listaProductos => listaProductos.cat === parametro)) 
             }, 2000);
         }
         else{

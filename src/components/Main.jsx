@@ -10,7 +10,6 @@ import nivelSeisQuick from "./images/suscripcion-nivelseis.png";
 import mediospagoQuick from "./images/medios-pago.png";
 import Detalles from "./Detalles";
 
-
 const Main = () =>{
 
     return (
