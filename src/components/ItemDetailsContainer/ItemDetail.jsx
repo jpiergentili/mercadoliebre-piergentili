@@ -1,7 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ItemCount from "../ItemCount/ItemCount";
 
+import { CartContext } from "../Context/Context";
+
 const ItemDetail = ({item}) => {
+
+    const {addItem} = React.useContext(CartContext);
+    const [counter, setCounter] = React.useState(0);
+
+    const onAdd = (counter) =>{
+        setCounter(counter);
+        addItem(item, counter);
+    }
 
     return(
         <section>
@@ -14,7 +26,7 @@ const ItemDetail = ({item}) => {
                         <p className="card-text text-left"> ${item.price}</p>
                         <p className="card-text text-left"> {item.detail}</p>
                     </div>
-                    <ItemCount stock={item.stock} initial={1} onAdd={0} />
+                    {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={"/cart"} className="btn fondo_naranja">Ir al Carrito</Link>}
                 </div>
             </div>
         </section>

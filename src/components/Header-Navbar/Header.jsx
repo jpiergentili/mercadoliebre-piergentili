@@ -4,7 +4,8 @@ import NavBar from "./NavBar";
 import ImageLvl6 from "../images/Image-promo-lvl6.png"
 import NavCuenta from "../NavCuenta/NavCuenta";
 import ImageUbic from "../images/button-geo.png"
-import Carrito from "../CartWidget/CartWidget";
+
+import CartWidget from "../CartWidget/CartWidget";
 
 
 const Header = () => {
@@ -37,7 +38,7 @@ const Header = () => {
                 <NavCuenta />
 
                 <div className="header-container-carrito">
-                   <Carrito cantidad="3"/>
+                   <CartWidget />
                 </div>
                 
             </div>
