@@ -1,7 +1,7 @@
 import React from "react";
 
 import {useParams} from "react-router-dom";
-import { getItemId } from "./CustomFetch";
+import { getItemId } from "../CustomFetch";
 
 const ItemCount = ({stock, initial, onAdd}) =>{
 

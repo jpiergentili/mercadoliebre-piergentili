@@ -1,8 +1,10 @@
 import React from "react";
 
-import ItemDetail from "./ItemDetail";
+
 import {useParams} from "react-router-dom";
-import { getItemId } from "./CustomFetch";
+import { getItemId } from "../CustomFetch";
+import ItemDetail from "./ItemDetail";
+
 
 
 const ItemDetailContainer = () =>{

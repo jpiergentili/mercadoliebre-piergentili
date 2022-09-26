@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "./images/LOGO-JP.png";
+import logo from "../images/LOGO-JP.png";
 import NavBar from "./NavBar";
-import ImageLvl6 from "./images/Image-promo-lvl6.png"
-import NavCuenta from "./NavCuenta";
-import ImageUbic from "./images/button-geo.png"
-import Carrito from "./CartWidget";
+import ImageLvl6 from "../images/Image-promo-lvl6.png"
+import NavCuenta from "../NavCuenta/NavCuenta";
+import ImageUbic from "../images/button-geo.png"
+import Carrito from "../CartWidget/CartWidget";
 
 
 const Header = () => {
