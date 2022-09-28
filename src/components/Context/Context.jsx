@@ -21,6 +21,11 @@ const Provider = ({children}) => {
         setCart([]);
     }
 
+    const deleteOne = (id) =>{
+        const productosFiltrados = cart.filter((prod) => prod.id !== id)
+        setCart(productosFiltrados)
+    };
+
     /* FUNCION PARA DETECTAR SI LA ID DEL COMPONENTE BUSCADO YA SE ENCUENTRA EN EL ARRAY DEL CARRITO */
     const isInCart = (id) => {
         return cart.some(item => item.id === id);
@@ -32,7 +37,7 @@ const Provider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={{cart, addItem, clear, isInCart, cartTotal}}>
+        <CartContext.Provider value={{cart, addItem, clear, isInCart, cartTotal, deleteOne}}>
             {children}
         </CartContext.Provider>
     )

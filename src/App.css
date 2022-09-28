@@ -272,11 +272,20 @@ main{
   margin-right: auto;
 }
 
-/* FOOTER */
 
-footer{
-  height: 425px;
-}
+/* CART */
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
 
 .footer-rapido{
   max-width: 1600px;
