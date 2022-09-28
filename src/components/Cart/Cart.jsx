@@ -8,8 +8,10 @@ const Cart = () => {
 
     console.log(cart);
 
-    const CartArticle = () =>{
-        return(cart.map(article => (
+
+    
+    const CartArticle = () => {
+        return (cart.map(article => (
             <div key={article.id} className="card rounded-3 mb-4">
                 <div className="card-body p-4">
                     <div className="row d-flex justify-content-between align-items-center">
@@ -39,9 +41,9 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>
-            </div>)            
-                            )
-                )
+            </div>)
+        )
+        )
     }
     
     return (
@@ -61,21 +63,32 @@ const Cart = () => {
                                     </div>
                                 </div>
 
-                                <CartArticle />                                
+                                {cart.length !== 0 ?
+                                
+                                <CartArticle />  : 
+                                <div className="card mb-4">
+                                    <div className="card-body p-4 d-flex flex-row">
+                                    <div className="form-outline flex-fill">
+                                        <img src="https://i.postimg.cc/Zq17WGHJ/Carrito-Vacio.png" alt="EmptyCart" className="img-fluid img-empty-cart"/>
+                                        <Link to="/" className="btn btn-outline-warning btn-lg ms-3">COMPRA ALGO</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                }                             
 
                                 <div className="card mb-4">
                                     <div className="card-body p-4 d-flex flex-row">
                                         <div className="form-outline flex-fill">
                                             <input type="text" id="form1" className="form-control form-control-lg" />
-                                            <label className="form-label" htmlFor="form1">Discound code</label>
+                                            <label className="form-label" htmlFor="form1">Codigo de descuento</label>
                                         </div>
-                                        <button type="button" className="btn btn-outline-warning btn-lg ms-3">Apply</button>
+                                        <button type="button" className="btn btn-outline-warning btn-lg ms-3">Aplicar</button>
                                     </div>
                                 </div>
 
                                 <div className="card">
                                     <div className="card-body">
-                                        <button type="button" className="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+                                        <button type="button" className="btn btn-warning btn-block btn-lg">Proceder con el pago</button>
                                     </div>
                                 </div>
 

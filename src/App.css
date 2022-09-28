@@ -286,6 +286,10 @@ main{
     input[type=number] {
       -moz-appearance: textfield;
     }
+  
+  .img-empty-cart{
+    width: 600px;
+  }
 
 .footer-rapido{
   max-width: 1600px;
