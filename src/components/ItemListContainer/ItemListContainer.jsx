@@ -1,8 +1,10 @@
 import React from "react";
+
 import {useParams} from "react-router-dom";
-import { getItemsList } from "../CustomFetch";
 
 import ItemList from "./ItemList";
+
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () =>{
 
@@ -12,20 +14,18 @@ const ItemListContainer = () =>{
 
     React.useEffect(() => {    
 
-        getItemsList(categoryId).then((respuesta) =>{   
-                setItems(respuesta);
-            });
-    
-            /* en caso de que la peticion al servidor salga fallida se ejecutara el metodo catch */
-        getItemsList(categoryId).catch((error) =>{   
-            console.log(error);
+        const db = getFirestore();
+        
+        const productsCollection = collection(db, "productos");
+
+        const queryProducts = categoryId ? query(productsCollection, where("cat", "==", categoryId)) : productsCollection;
+
+        getDocs(queryProducts).then((snapShot) => {
+            if (snapShot.size > 0) {
+                setItems(snapShot.docs.map(item => ({id:item.id, ...item.data()})));
+            }
         });
-    
 
-
-/* los corchetes de la linea siguiente se utilizan a modo de filtro, 
-para evitar que la actualizacion de los estados se ejecute todo el tiempo,
-poniendo los corchetes se ejecuta 1 sola vez al inicio */
     }, [categoryId]); 
 
     return (

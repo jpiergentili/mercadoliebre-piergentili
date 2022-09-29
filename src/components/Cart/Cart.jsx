@@ -5,10 +5,6 @@ import { CartContext } from "../Context/Context";
 const Cart = () => {
 
     const {cart, deleteOne} = React.useContext(CartContext);
-
-    console.log(cart);
-
-
     
     const CartArticle = () => {
         return (cart.map(article => (
