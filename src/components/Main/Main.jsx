@@ -9,6 +9,7 @@ import MyShopping from "../NavCuenta/MyShopping";
 import SignUp from "../NavCuenta/SignUp";
 
 import Cart from "../Cart/Cart";
+import Checkout from "../Checkout/Checkout";
 
 const Main = () =>{
 
@@ -24,6 +25,7 @@ const Main = () =>{
                             <Route exact path="/myshopping" element={<MyShopping />} />
 
                             <Route exact path="/cart" element={<Cart />} />
+                            <Route exact path="/checkout" element={<Checkout />} />
                     </Routes>
             </main>
     )

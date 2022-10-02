@@ -8,9 +8,10 @@ import { getFirestore, collection, getDocs, query, where } from "firebase/firest
 
 const ItemListContainer = () =>{
 
+    const {categoryId} = useParams();
+    
     const [items, setItems] = React.useState([]);
 
-    const {categoryId} = useParams();
 
     React.useEffect(() => {    
 

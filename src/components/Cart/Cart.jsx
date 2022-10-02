@@ -4,8 +4,8 @@ import { CartContext } from "../Context/Context";
 
 const Cart = () => {
 
-    const {cart, deleteOne} = React.useContext(CartContext);
-    
+    const { cart, deleteOne } = React.useContext(CartContext);
+
     const CartArticle = () => {
         return (cart.map(article => (
             <div key={article.id} className="card rounded-3 mb-4">
@@ -41,7 +41,7 @@ const Cart = () => {
         )
         )
     }
-    
+
     return (
         <section className="container-fluid">
             <div className="row bg-light">
@@ -54,23 +54,23 @@ const Cart = () => {
                                     <h3 className="fw-normal mb-0 text-black">Shopping Cart</h3>
                                     <div>
                                         <p className="mb-0"><span className="text-muted">Ordenar por:</span>
-                                        <Link to="/cart" className="text-body">Precio <i className="fas fa-angle-down mt-1"></i></Link>
+                                            <Link to="/cart" className="text-body">Precio <i className="fas fa-angle-down mt-1"></i></Link>
                                         </p>
                                     </div>
                                 </div>
 
                                 {cart.length !== 0 ?
-                                
-                                <CartArticle />  : 
-                                <div className="card mb-4">
-                                    <div className="card-body p-4 d-flex flex-row">
-                                    <div className="form-outline flex-fill">
-                                        <img src="https://i.postimg.cc/Zq17WGHJ/Carrito-Vacio.png" alt="EmptyCart" className="img-fluid img-empty-cart"/>
-                                        <Link to="/" className="btn btn-outline-warning btn-lg ms-3">COMPRA ALGO</Link>
+
+                                    <CartArticle /> :
+                                    <div className="card mb-4">
+                                        <div className="card-body p-4 d-flex flex-row">
+                                            <div className="form-outline flex-fill">
+                                                <img src="https://i.postimg.cc/Zq17WGHJ/Carrito-Vacio.png" alt="EmptyCart" className="img-fluid img-empty-cart" />
+                                                <Link to="/" className="btn btn-outline-warning btn-lg ms-3">COMPRA ALGO</Link>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                }                             
+                                }
 
                                 <div className="card mb-4">
                                     <div className="card-body p-4 d-flex flex-row">
@@ -82,12 +82,13 @@ const Cart = () => {
                                     </div>
                                 </div>
 
-                                <div className="card">
-                                    <div className="card-body">
-                                        <button type="button" className="btn btn-warning btn-block btn-lg">Proceder con el pago</button>
-                                    </div>
-                                </div>
-
+                                {cart.length !== 0 ?
+                                    <div className="card">
+                                        <div className="card-body">
+                                            <Link to={"/checkout"} className="btn btn-warning btn-block btn-lg">Proceder con el pago</Link>
+                                        </div>
+                                    </div> :
+                                    <div></div>}
                             </div>
                         </div>
                     </div>
