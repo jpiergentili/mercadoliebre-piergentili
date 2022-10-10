@@ -1,4 +1,4 @@
-<<<<ESTA PAGINA FUE CREADA SOLO CON FINES EDUCATIVOS>>>>
+----ESTA PAGINA FUE CREADA SOLO CON FINES EDUCATIVOS----
 
 Mercadoliebre es una página para comprar y vender productos que publican los usuarios desde sus cuentas.
 
