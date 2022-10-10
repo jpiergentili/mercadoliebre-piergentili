@@ -1,5 +1,5 @@
 import React from "react";
-import footer from "../images/footer.png"
+const footer = "https://drive.google.com/uc?id=12OIMg9Zna75yFR5PUjCG0Wn-RouKIRhH"
 
 const Footer = () =>{
     return (

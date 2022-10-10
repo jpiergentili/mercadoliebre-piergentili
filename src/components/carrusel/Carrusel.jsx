@@ -1,11 +1,12 @@
 import React from "react";
 
-import banner1 from "../images/banner1.png";
-import banner2 from "../images/banner2.png";
-import banner3 from "../images/banner3.png";
-import banner4 from "../images/banner4.png";
-import banner5 from "../images/banner5.png";
-import banner6 from "../images/banner6.png";
+const banner1 = "https://drive.google.com/uc?id=1zGUosOUemQwCn9kf4V4ixZIrNqmlTXYm";
+const banner2 = "https://drive.google.com/uc?id=1Um2u45uNDKgPIWipxmqM9_4BXc3zV-xQ";
+const banner3 = "https://drive.google.com/uc?id=1-j6K4vFprz2qmV63xC4NDF7RWG_Zhxq1";
+const banner4 = "https://drive.google.com/uc?id=1NCtOsEWzb-SQuGclOEoADQoBFY7Sjk50";
+const banner5 = "https://drive.google.com/uc?id=1uAz9D3GgKeQ24J5FPuv5fBj27d-jgQti";
+const banner6 = "https://drive.google.com/uc?id=1gaverpRBmr90qZpQ5SE03xf9Tkwsv6O6";
+
 
 const Carrusel = () =>{
     return (

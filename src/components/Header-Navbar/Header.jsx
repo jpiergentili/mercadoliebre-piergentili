@@ -1,12 +1,15 @@
 import React from "react";
-import logo from "../images/LOGO-JP.png";
+
 import NavBar from "./NavBar";
-import ImageLvl6 from "../images/Image-promo-lvl6.png"
+
 import NavCuenta from "../NavCuenta/NavCuenta";
-import ImageUbic from "../images/button-geo.png"
+
 
 import CartWidget from "../CartWidget/CartWidget";
 
+const logo = "https://drive.google.com/uc?id=1ZmMyQpnFX3omgA02u4Da0jdP1Vw9iELj";
+const ImageUbic = "https://drive.google.com/uc?id=1bPNI8s7G2hr8mRpSq5zpcBtXnC9Y_tVF";
+const ImageLvl6 = "https://drive.google.com/uc?id=1KBDfhXfHpaJS6AKXBwSpDjb9axQnzni2";
 
 const Header = () => {
     return (

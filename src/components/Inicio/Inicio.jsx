@@ -2,8 +2,8 @@ import React from "react";
 import Carrusel from "../Carrusel/Carrusel";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
-import nivelSeisQuick from "../images/suscripcion-nivelseis.png";
-import mediospagoQuick from "../images/medios-pago.png";
+const nivelSeisQuick = "https://drive.google.com/uc?id=1guGomdObQdUcN5MmzaibLO5Zdb9jI2vB";
+const mediospagoQuick = "https://drive.google.com/uc?id=1wcMWigegmDJ0Mjcv24sINxnQy2YVAucI";
 
 const Inicio = () =>{
     return (
