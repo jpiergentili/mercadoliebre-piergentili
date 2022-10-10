@@ -7,7 +7,6 @@ const banner4 = "https://drive.google.com/uc?id=1NCtOsEWzb-SQuGclOEoADQoBFY7Sjk5
 const banner5 = "https://drive.google.com/uc?id=1uAz9D3GgKeQ24J5FPuv5fBj27d-jgQti";
 const banner6 = "https://drive.google.com/uc?id=1gaverpRBmr90qZpQ5SE03xf9Tkwsv6O6";
 
-
 const Carrusel = () =>{
     return (
             /* CARRUSEL */
