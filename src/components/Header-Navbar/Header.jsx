@@ -7,9 +7,9 @@ import NavCuenta from "../NavCuenta/NavCuenta";
 
 import CartWidget from "../CartWidget/CartWidget";
 
-const logo = "https://postimg.cc/hJ84LGWc";
-const ImageUbic = "https://postimg.cc/k6nJfdq8";
-const ImageLvl6 = "https://postimg.cc/DJB2NYwN";
+const logo = "https://i.postimg.cc/9fK4j4LR/image.png";
+const ImageUbic = "https://i.postimg.cc/gJhxcY7M/image.png";
+const ImageLvl6 = "https://i.postimg.cc/0jqbbTR9/image.png";
 
 const Header = () => {
     return (
