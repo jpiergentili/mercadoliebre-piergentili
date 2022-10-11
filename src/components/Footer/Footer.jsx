@@ -1,5 +1,5 @@
 import React from "react";
-const footer = "https://drive.google.com/uc?id=12OIMg9Zna75yFR5PUjCG0Wn-RouKIRhH"
+const footer = "https://postimg.cc/XXsJ1XZv"
 
 const Footer = () =>{
     return (

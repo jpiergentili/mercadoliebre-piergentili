@@ -2,8 +2,8 @@ import React from "react";
 import Carrusel from "../carrusel/Carrusel";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
-const nivelSeisQuick = "https://drive.google.com/uc?id=1guGomdObQdUcN5MmzaibLO5Zdb9jI2vB";
-const mediospagoQuick = "https://drive.google.com/uc?id=1wcMWigegmDJ0Mjcv24sINxnQy2YVAucI";
+const nivelSeisQuick = "https://postimg.cc/TpSPGSJM";
+const mediospagoQuick = "https://postimg.cc/ZWd5qcw9";
 
 const Inicio = () =>{
     return (

@@ -7,9 +7,9 @@ import NavCuenta from "../NavCuenta/NavCuenta";
 
 import CartWidget from "../CartWidget/CartWidget";
 
-const logo = "https://drive.google.com/uc?id=1ZmMyQpnFX3omgA02u4Da0jdP1Vw9iELj";
-const ImageUbic = "https://drive.google.com/uc?id=1bPNI8s7G2hr8mRpSq5zpcBtXnC9Y_tVF";
-const ImageLvl6 = "https://drive.google.com/uc?id=1KBDfhXfHpaJS6AKXBwSpDjb9axQnzni2";
+const logo = "https://postimg.cc/hJ84LGWc";
+const ImageUbic = "https://postimg.cc/k6nJfdq8";
+const ImageLvl6 = "https://postimg.cc/DJB2NYwN";
 
 const Header = () => {
     return (
