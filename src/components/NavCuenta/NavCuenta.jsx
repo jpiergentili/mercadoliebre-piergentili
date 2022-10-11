@@ -6,7 +6,7 @@ const NavCuenta = () => {
         <div className="row header-container-nav-cuenta">
             <ul className="navbar header-ul-nav-cuenta">
                 <li>
-                    <Link className="header-nav-link"  to="/signup">Creá tu cuenta</Link>
+                    <Link className="header-nav-link"  to="/signup">SIGN UP</Link>
                 </li>
                 <li>
                     <Link className="header-nav-link" to="/login">Ingresá</Link>
