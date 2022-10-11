@@ -1,11 +1,11 @@
 import React from "react";
 
-const banner1 = "https://postimg.cc/4HfY79mD";
-const banner2 = "https://postimg.cc/5jbYkZns";
-const banner3 = "https://postimg.cc/mhjzx8nB";
-const banner4 = "https://postimg.cc/HVLJTbG5";
-const banner5 = "https://postimg.cc/QHnFCVsz";
-const banner6 = "https://postimg.cc/FYd7LmHH";
+const banner1 = "https://i.postimg.cc/Fzc36bmH/image.png";
+const banner2 = "https://i.postimg.cc/3rDXWhpQ/image.png";
+const banner3 = "https://i.postimg.cc/CLTjq2HB/image.png";
+const banner4 = "https://i.postimg.cc/Nf6R7xpN/image.png";
+const banner5 = "https://i.postimg.cc/4xXV8h0X/image.png";
+const banner6 = "https://i.postimg.cc/qvQnWvfy/image.png";
 
 const Carrusel = () =>{
     return (

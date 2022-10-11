@@ -1,5 +1,5 @@
 import React from "react";
-const footer = "https://postimg.cc/XXsJ1XZv"
+const footer = "https://i.postimg.cc/SNhMsMkc/image.png"
 
 const Footer = () =>{
     return (
