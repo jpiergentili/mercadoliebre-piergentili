@@ -17,6 +17,8 @@ const CartWidget = () => {
 
     return (
         <div className="d-flex text-center">
+            
+            {/* OPERADOR TERNARIO QUE PERMITE MOSTRAR EL ICONO PARA VACIAR EL CARRITO DEPENDIENDO SI ESTE POSEE ARTICULOS CARGADOS O NO */}
             {cartTotal() !== 0 ?
                 <><Link to={"/cart"}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#555" className="bi bi-cart2" viewBox="0 0 16 16">

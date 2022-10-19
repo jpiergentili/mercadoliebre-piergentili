@@ -1,6 +1,7 @@
 import React from "react";
 const footer = "https://i.postimg.cc/SNhMsMkc/image.png"
 
+//FOOTER EN CONSTRUCCION - POR EL MOMENTO SE EMPLEO UNA IMAGEN PARA DAR FORMA A LA PAGINA
 const Footer = () =>{
     return (
         <footer className="container-fluid">

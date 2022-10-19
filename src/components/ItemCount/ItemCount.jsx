@@ -5,18 +5,21 @@ const ItemCount = ({initial, stock, onAdd}) =>{
     const [counter, setCounter] = React.useState(initial);
     const [itemStock, setItemStock] = React.useState(stock);
 
+    //FUNCION PARA DISMINUIR LA CANTIDAD DE PRODUCTOS A AGREGAR AL CARRITO
     const decrementarCantidad = (valor) => {
         if (valor >0){
             setCounter(valor);
         }        
     }
 
+    //FUNCION PARA AUMENTAR LA CANTIDAD DE PRODUCTOS A AGREGAR AL CARRITO  
     const incrementarCantidad = (valor) => {
         if (valor <= itemStock){
             setCounter(valor);
         }
     }
 
+    //FUNCION PARA AGREGAR LOS PRODUCTOS AL CARRITO
     const agregarProductos = () =>{
         if (counter <= itemStock) {
             onAdd(counter); 

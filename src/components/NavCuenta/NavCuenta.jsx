@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+
+//NAVBAR DESTINADO A LAS GESTIONES DE LA CUENTA DE USUARIO
 const NavCuenta = () => {
     return (
         <div className="row header-container-nav-cuenta">

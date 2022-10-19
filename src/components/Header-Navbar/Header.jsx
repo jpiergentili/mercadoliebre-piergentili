@@ -1,10 +1,7 @@
 import React from "react";
 
 import NavBar from "./NavBar";
-
 import NavCuenta from "../NavCuenta/NavCuenta";
-
-
 import CartWidget from "../CartWidget/CartWidget";
 
 const logo = "https://i.postimg.cc/9fK4j4LR/image.png";

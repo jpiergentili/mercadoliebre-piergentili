@@ -6,6 +6,7 @@ const Cart = () => {
 
     const { cart, deleteOne } = React.useContext(CartContext);
 
+    /*COMPONENTE AUXILIAR DONDE SE MAPEAN LOS ELEMENTOS CARGADOS AL ARRAY DE OBJETOS CART */
     const CartArticle = () => {
         return (cart.map(article => (
             <div key={article.id} className="card rounded-3 mb-4">
@@ -42,6 +43,7 @@ const Cart = () => {
         )
     }
 
+
     return (
         <section className="container-fluid">
             <div className="row bg-light">
@@ -59,9 +61,14 @@ const Cart = () => {
                                     </div>
                                 </div>
 
+
+                                {/* OPERADOR TERNARIO QUE DEVUELVE UNA SOLUCION DEPENDIENDO SI EL CARRITO ESTA VACIO O NO */}
                                 {cart.length !== 0 ?
 
+                                    /* SI EL CARRITO "NO ESTA VACIO" DEVUELVE EL COMPONENTE AUXILIAR DONDE SE MAPEO EL ARRAY "CART" */
                                     <CartArticle /> :
+
+                                    /* SI EL CARRITO "ESTA VACIO" MUESTRA UNA IMAGEN DE UNA CARRITO VACIO Y SE DA ACCESO A LA LISTA DE PRODUCTOS PARA COMPRAR ALGO */
                                     <div className="card mb-4">
                                         <div className="card-body p-4 d-flex flex-row">
                                             <div className="form-outline flex-fill">
@@ -82,12 +89,17 @@ const Cart = () => {
                                     </div>
                                 </div>
 
+                                {/* OPERADOR TERNARIO QUE DEVUELVE UNA SOLUCION DEPENDIENDO SI EL CARRITO ESTA VACIO O NO */}
                                 {cart.length !== 0 ?
+
+                                    /* SI EL CARRITO "NO ESTA VACIO" SE RENDERIZA EL BOTON PARA PROCEDER CON EL PAGO*/
                                     <div className="card">
                                         <div className="card-body">
                                             <Link to={"/checkout"} className="btn btn-warning btn-block btn-lg">Proceder con el pago</Link>
                                         </div>
                                     </div> :
+                                    
+                                    /* SI EL CARRITO "ESTA VACIO" DEVUELVE UN DIV VACIO EN VEZ DEL BOTON PARA PROCEDER CON EL PAGO */
                                     <div></div>}
                             </div>
                         </div>

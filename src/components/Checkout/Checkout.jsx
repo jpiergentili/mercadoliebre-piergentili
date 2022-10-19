@@ -7,9 +7,10 @@ const styleDetailProduct = { backgroundColor: '#e0e0e0', opacity: '1' }
 
 
 const Checkout = () => {
-
+    
     const { cart, clear, cartTotal, cartSuma } = React.useContext(CartContext);
 
+    //DEFINICION DE ESTADOS DE LAS VARIABLES A SOLICITAR EN EL FORMULARIO
     const  [nombre, setNombre]  = React.useState("");
     const  [apellido, setApellido]  = React.useState("");
     const  [empresa, setEmpresa]  = React.useState("");
@@ -18,30 +19,38 @@ const Checkout = () => {
     const  [telefono, setTelefono]  = React.useState("");
     const  [adicionales, setAdicionales]  = React.useState("");
 
+    //ID DE ORDEN ASIGNADA POR FIREBASE
     const [orderId, setOrderId] = React.useState("");
 
-
+    //FUNCION PARA ENVIAR DATOS DE LA ORDEN A FIREBASE
     const sendOrder = () => {
+
+        //VALIDACION BASICA DE NOMBRE, EMAIL Y TELEFONO ANTES DE PROCEDER CON EL ENVIO DE LOS DATOS
         if ((nombre !== "") && (email !== "") && (telefono !== "")) {
+
+            //DATOS DE LA PERSONA QUE COMPRA
             const buyer = { firstname: nombre, lastname: apellido, company: empresa, address: direccion, email: email, phone: telefono, aditionals: adicionales };
+            
+            //ARRAY DONDE SE CARGARAN LOS ITEMS QUE SE VAN A COMPRAR
             const items = [];
 
+            //PUSHEO DE DATOS DENTRO DEL ARRAY ITEMS
             cart.forEach((item) => {
                 items.push({ id: item.id, tittle: item.tittle, price: item.price });
             })
 
+            //MARCA TEMPORAL DE LA COMPRA
             const date = new Date();
             const now = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
+            //DATOS DE LA ORDEN ENVIADA A FIREBASE
             const order = { buyer: buyer, items: items, date: now, total: cartSuma() }
-
-            console.log(order);
 
             const db = getFirestore();
             const orderCollection = collection(db, "orders");
             addDoc(orderCollection, order).then(({ id }) => {
-                setOrderId(id);
-                clear();
+                setOrderId(id); //OBTENCION DEL ID DE LA ORDEN Y ACTUALIZACION DEL STATE
+                clear(); //VACIADO DEL CARRO LUEGO DE EFECTUADA LA COMPRA
             });
         }
     }

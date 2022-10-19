@@ -1,5 +1,6 @@
 import React from "react";
 
+//IMAGENES DEL CARRUSEL ALOJADAS EN FIREBASE
 const banner1 = "https://i.postimg.cc/Fzc36bmH/image.png";
 const banner2 = "https://i.postimg.cc/3rDXWhpQ/image.png";
 const banner3 = "https://i.postimg.cc/CLTjq2HB/image.png";
@@ -7,9 +8,9 @@ const banner4 = "https://i.postimg.cc/Nf6R7xpN/image.png";
 const banner5 = "https://i.postimg.cc/4xXV8h0X/image.png";
 const banner6 = "https://i.postimg.cc/qvQnWvfy/image.png";
 
+//CREACION DEL COMPONENTE CARRUSEL
 const Carrusel = () =>{
     return (
-            /* CARRUSEL */
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

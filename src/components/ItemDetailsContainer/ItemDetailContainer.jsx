@@ -12,7 +12,6 @@ const ItemDetailContainer = () =>{
 
     React.useEffect(() => {
 
-
         const db = getFirestore();
 
         //Almaceno la respuesta de la base de datos en una constante

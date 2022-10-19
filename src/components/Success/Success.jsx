@@ -1,5 +1,6 @@
 import React from "react";
 
+//COMPONENTE QUE SE MUESTRA AL FINALIZAR LA COMPRA
 const Success = ({id}) => {
     return (
         <div className="row">

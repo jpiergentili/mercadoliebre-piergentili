@@ -3,6 +3,8 @@ import React from "react";
 export const CartContext = React.createContext();
 
 const Provider = ({children}) => {
+
+    //DEFINO EL STATE DEL CARRITO PARA ALOJAR TODOS LOS PRODUCTOS QUE VA AGREGANDO EL CLIENTE
     const [cart, setCart] = React.useState([]);
 
     /* FUNCION PARA AGREGAR UN ITEM AL CARRITO */
@@ -21,6 +23,7 @@ const Provider = ({children}) => {
         setCart([]);
     }
 
+    //FUNCION PARA ELIMINAR UN PRODUCTO DEL CARRITO
     const deleteOne = (id) =>{
         const productosFiltrados = cart.filter((prod) => prod.id !== id)
         setCart(productosFiltrados)
@@ -36,6 +39,7 @@ const Provider = ({children}) => {
         return cart.reduce((total, item) => total+=item.cantidad, 0);
     }
 
+    //FUNCION PARA OBTENER UNA SUMA DE LOS PRECIOS DE TODOS LOS PRODUCTOS
     const cartSuma = () =>{
         return cart.reduce((price, item) => price+=(item.price)*(item.cantidad), 0);
     }
