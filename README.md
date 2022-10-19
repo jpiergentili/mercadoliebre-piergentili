@@ -14,3 +14,6 @@ Al dirigirse al carrito se puede visualizar (ruta "/cart"), se podrán visualiza
 
 Por último, al proceder con el pago desde el carrito se redirige a la ruta "/checkout", donde el usuario debe cargar los datos de facturación y finalizar la compra.
 
+---
+
+NOTA: Los estilos CSS de toda la pagina se encuentran en el documento App.css dentro de la carpeta "src"
